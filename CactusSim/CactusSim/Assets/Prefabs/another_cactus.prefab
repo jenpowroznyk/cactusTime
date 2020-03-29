@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1078314176279652396}
   - component: {fileID: 339513300870921471}
   - component: {fileID: 9049019476102811663}
+  - component: {fileID: 5063210409365374695}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &5063210409365374695
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58333208517209242}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.1575807
+  m_Height: 2.9378552
+  m_Direction: 1
+  m_Center: {x: -0.00000047683716, y: -0.4818461, z: -0.007412553}
 --- !u!1 &5819626061687556359
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +103,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7392710229888662292}
+  - component: {fileID: 3374496809300085186}
+  - component: {fileID: 2002002366098675806}
   m_Layer: 0
   m_Name: another_cactus
   m_TagString: Untagged
@@ -104,7 +121,7 @@ Transform:
   m_GameObject: {fileID: 5819626061687556359}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1161901, y: 0.1161901, z: 0.1161901}
   m_Children:
   - {fileID: 1078314176279652396}
   - {fileID: 7392710230721119935}
@@ -113,6 +130,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3374496809300085186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5819626061687556359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7a71189f9091049b1aca1f23fbb75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2002002366098675806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5819626061687556359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e1025da4eade145b443209c8ce62e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decorationTransform: {fileID: 0}
+  thisObject: {fileID: 0}
 --- !u!1001 &2585798494612549029
 PrefabInstance:
   m_ObjectHideFlags: 0
